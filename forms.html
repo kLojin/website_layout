@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMS</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @media only screen and (max-width: 360px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.col-1 { width:100%}
+.col-2 { width:90%}
+.col-3 { width:35%}
+    * {
+      font-family: 'poppins';
+    }
+    /* div {
+      background-color: antiquewhite;
+      width: 50%;
+    } */
+    .fn_ln {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+      align-content: center;
+    }
+
+    .fr {
+      padding: 2rem;
+      background-color: #ffa600;
+      border-radius: 20px;
+      text-align: center;
+    }
+    legend {
+      font-weight: bold;
+    }
+
+  .sec_z {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(59, 41, 2, 0.116)), url('https://images2.alphacoders.com/564/564835.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 8% 0% 7% 0%;
+}
+.field {
+  padding: 1rem;
+  border-radius: 10px;
+  border-width: .4rem;
+  border-color: #d0ff00;
+  border-style:double;
+  display: block;
+  background-image: linear-gradient(rgb(255, 166, 0), rgba(255, 166, 0, 0.37)),url('https://wallpapers-clan.com/wp-content/uploads/2023/04/dragon-ball-goku-aesthetic-orange-wallpaper.jpg');
+  border-style: none;
+  background-size: cover;
+  background-position: center;
+  /* margin: .5rem; */
+}
+#reg {
+  padding: .8rem;
+  background-color: #ffa600b0;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffff80;
+  font-size: larger;
+  font-weight:350 ;
+  color: #ffffff;
+  font-weight: 400;
+  transition: .15s !important;
+}
+#reg:hover {
+  background-color: #ffffffe8;
+  color: #ffa600;
+  border-color: #ffa6007e;
+}
+
+textarea {
+  border-radius: 0px 20px 0px 20px;
+  border-style: none;
+}
+
+.i_fn {
+  width: 13rem;
+  border-radius: 5px;
+  border-style: none;
+  height: 2rem;
+  text-align: center;
+  background-color: #ffffffbb;
+}
+.i_fnn {
+  width: 13rem;
+  border-radius: 5px;
+  border-style: none;
+  height: 2rem;
+}
+  </style>
+</head>
+<body>
+<!----------------------------------------------------------------- navbar -->
+  <header>
+    <a href="#" class="logo"></i>JG Scans</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#bookmarks">Bookmarks</a>
+      <a href="#comics">Comics</a>
+      <a class="active" href="#registration">Registration</a>
+    </nav>
+  </header>
+  <!-------------------------------------------------------------- Section -->
+  
+  <section class="sec_z">
+    <div class="fr container">
+      <form class="needs-validation" novalidate>
+        <fieldset class="field">
+          <legend
+          style="color: #ffffff;
+          display: table; 
+          position: relative;
+          margin: auto;
+          font-size: 1.5rem;">&nbsp;REGISTRATION FORM&nbsp;</legend>
+
+        <div class="fn_ln">
+         <div class="fn">
+          <!-- <label for="">First Name:</label></br> -->
+          <input class="i_fn" type="text" placeholder="&nbsp;First Name" required>
+         </div>
+         <div class="ln">
+          <!-- <label for="">Last Name:</label><br> -->
+          <input class="i_fn" type="text" placeholder="&nbsp;Last Name" required></br></br>
+          </div>
+        </div>
+
+        <label class="form-label" for="ename">Email:</label><br>
+        <input class="i_fn form-control" type="email" name="ename" id="ename" placeholder="&nbsp;Email" style="width: 28rem;">
+          <div class="valid-feedback">Valid Email</div>
+          <div class="invalid-feedback">Invalid Email. Please put a correct email.</div></br></br>
+
+        <!-- <label for="">Password:</label><br> -->
+        <input class="i_fn" type="password" placeholder="&nbsp;Password" style="width: 28rem;"></br></br>
+<!-- 
+        <label for="">Phone Number:</label><br> -->
+        <input class="i_fn" type="tel" required placeholder="&nbsp;Phone Number" style="width: 28rem;"></br></br>
+
+        <!-- <label for="">Hobbies:</label><br>
+        <input type="checkbox"><label>Reading Books</label><br>
+        <input type="checkbox"><label>Playing Guitar</label></br></br>
+        <label for="">Birthdate:</label>
+        <input type="date"></br></br>
+        <label for="">Gender:</label> -->
+
+        <input type="radio" id="f" value="female" name="gender"><label>&nbsp;Female</label>
+        <input type="radio" id="m" value="male" name="gender"><label>&nbsp;Male</label></br></br>
+
+        <!-- <label for="">Time</label>
+        <input type="time"></br></br> -->
+        <label for="">City</label>&nbsp;
+        <select name="" id="">
+          <option value="Manila">Manila</option>
+          <option value="Cebu">Cebu</option>
+          <option value="Tacloban">Tacloban</option>
+          <option value="Earth">Earth</option>
+        </select><br><br>
+
+        <!-- <label for="">Leave a comment here</label><br> -->
+        <textarea style="background-color: #ffffffbb;" name="hype_nemen" cols="40" rows="5" placeholder="&nbsp;Leave a Comment Here"></textarea><br><br>
+        
+        <!-- <label for="">Please pili ka Rides mo!</label>
+        <input list="Cars" name="car"><br>
+          <datalist id="Cars">
+            <option>Ferrari</option>
+            <option>Lambo</option>
+            <option>Bat Mobil</option>
+          </datalist><br><br> -->
+    
+        <input id="reg" type="submit" value="Register"><br><br>
+        <!-- <button type="button" onclick="alert('Maraming Salamat naman at Natauhan ka!')">Submit mo na Plz1</button> -->
+    
+    
+    
+      </fieldset>
+    
+    
+      </form>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer_div">
+    <footer>
+    <p>&copy; JG Scans</p>
+    </footer>
+  </div>
+
+  
+</body>
+</html>
